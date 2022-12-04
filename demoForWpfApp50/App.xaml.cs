@@ -14,6 +14,8 @@ namespace demoForWpfApp50
     /// </summary>
     public partial class App : Application
     {
+        public new static App Current => (App)Application.Current;
+
         public IServiceProvider Services { get; }
 
         public App()
@@ -25,6 +27,7 @@ namespace demoForWpfApp50
         private static IServiceProvider ConfigureServices()
         {
             var services = new ServiceCollection();
+            services.AddTransient<MainViewModel>();
             services.AddSingleton<MainWindow>();
             return services.BuildServiceProvider();
         }

@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using MediatR;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -14,6 +15,8 @@ namespace demoForWpfApp60
     /// </summary>
     public partial class App : Application
     {
+        public new static App Current => (App)Application.Current;
+
         public IServiceProvider Services { get; }
 
         public App()
@@ -25,7 +28,9 @@ namespace demoForWpfApp60
         private static IServiceProvider ConfigureServices()
         {
             var services = new ServiceCollection();
+            services.AddTransient<MainViewModel>();
             services.AddSingleton<MainWindow>();
+            services.AddMediatR(typeof(MainViewModel).Assembly);
             return services.BuildServiceProvider();
         }
 

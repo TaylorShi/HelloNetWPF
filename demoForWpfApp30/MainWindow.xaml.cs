@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace demoForWpfApp30
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = App.Current.Services.GetService<MainViewModel>();
         }
     }
 }
