@@ -3,13 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demoForWpfApp60", "demoForWpfApp60\demoForWpfApp60.csproj", "{1C85DBD8-153F-4DD0-8B36-5F1B9862C141}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "demoForWpfApp60", "demoForWpfApp60\demoForWpfApp60.csproj", "{1C85DBD8-153F-4DD0-8B36-5F1B9862C141}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demoForWpfApp50", "demoForWpfApp50\demoForWpfApp50.csproj", "{3AB79940-DD9B-40CD-A89B-F5AAD030204E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "demoForWpfApp50", "demoForWpfApp50\demoForWpfApp50.csproj", "{3AB79940-DD9B-40CD-A89B-F5AAD030204E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demoForWpfApp30", "demoForWpfApp30\demoForWpfApp30.csproj", "{EB7EF7F4-C07D-448A-9A0F-C86FBCCE28B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "demoForWpfApp30", "demoForWpfApp30\demoForWpfApp30.csproj", "{EB7EF7F4-C07D-448A-9A0F-C86FBCCE28B3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demoForWpfApp472", "demoForWpfApp472\demoForWpfApp472.csproj", "{17B9EDAF-2288-4222-AFE1-56ED9F2899DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demoForHostWpf60", "demoForHostApp60\demoForHostWpf60.csproj", "{C92E2F56-A0E5-4622-A358-7848EF05C296}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demoForHostConsole60", "demoForHostConsole60\demoForHostConsole60.csproj", "{9B6812AB-6C7B-43AE-A63D-D03F11DBA28D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demoForHostWebApi60", "demoForHostWebApi60\demoForHostWebApi60.csproj", "{0DEF28C5-C25C-4C14-83A1-AA1494506561}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demoForHostWebApi31", "demoForHostWebApi31\demoForHostWebApi31.csproj", "{63E15F43-9695-4807-96B4-7ED7C3833646}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demoForHostWebApi50", "demoForHostWebApi50\demoForHostWebApi50.csproj", "{8A7B1F31-4C5A-4521-8EBE-B335B1300827}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demoForHostWebApi70", "demoForHostWebApi70\demoForHostWebApi70.csproj", "{09247175-2DA7-4BF7-B9F0-6F4ED07B8787}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +45,30 @@ Global
 		{17B9EDAF-2288-4222-AFE1-56ED9F2899DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17B9EDAF-2288-4222-AFE1-56ED9F2899DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17B9EDAF-2288-4222-AFE1-56ED9F2899DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C92E2F56-A0E5-4622-A358-7848EF05C296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92E2F56-A0E5-4622-A358-7848EF05C296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92E2F56-A0E5-4622-A358-7848EF05C296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92E2F56-A0E5-4622-A358-7848EF05C296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B6812AB-6C7B-43AE-A63D-D03F11DBA28D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B6812AB-6C7B-43AE-A63D-D03F11DBA28D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B6812AB-6C7B-43AE-A63D-D03F11DBA28D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B6812AB-6C7B-43AE-A63D-D03F11DBA28D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DEF28C5-C25C-4C14-83A1-AA1494506561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DEF28C5-C25C-4C14-83A1-AA1494506561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DEF28C5-C25C-4C14-83A1-AA1494506561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DEF28C5-C25C-4C14-83A1-AA1494506561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63E15F43-9695-4807-96B4-7ED7C3833646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63E15F43-9695-4807-96B4-7ED7C3833646}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63E15F43-9695-4807-96B4-7ED7C3833646}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63E15F43-9695-4807-96B4-7ED7C3833646}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A7B1F31-4C5A-4521-8EBE-B335B1300827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A7B1F31-4C5A-4521-8EBE-B335B1300827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A7B1F31-4C5A-4521-8EBE-B335B1300827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A7B1F31-4C5A-4521-8EBE-B335B1300827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09247175-2DA7-4BF7-B9F0-6F4ED07B8787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09247175-2DA7-4BF7-B9F0-6F4ED07B8787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09247175-2DA7-4BF7-B9F0-6F4ED07B8787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09247175-2DA7-4BF7-B9F0-6F4ED07B8787}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
