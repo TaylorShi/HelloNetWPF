@@ -1,5 +1,7 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.Reflection;
 
 namespace demoForHostConsole60
 {
@@ -10,6 +12,19 @@ namespace demoForHostConsole60
             IHost host = Host
             // 创建生成器对象
             .CreateDefaultBuilder(args)
+            // 追加主机配置
+            .ConfigureHostConfiguration(configHost =>
+            {
+                configHost.SetBasePath(Directory.GetCurrentDirectory());
+                configHost.AddJsonFile("hostsettings.json", optional: true);
+                configHost.AddEnvironmentVariables(prefix: "PREFIX_");
+                configHost.AddCommandLine(args);
+            })
+            // 追加应用配置
+            .ConfigureAppConfiguration(configApp =>
+            {
+                configApp.SetBasePath(Path.GetDirectoryName(Assembly.GetEntryAssembly()!.Location));
+            })
             // 配置生成器对象
             .ConfigureServices((hostContext, services) =>
             {
